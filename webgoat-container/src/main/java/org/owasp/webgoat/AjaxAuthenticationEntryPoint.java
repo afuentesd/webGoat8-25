@@ -52,7 +52,7 @@ public class AjaxAuthenticationEntryPoint extends LoginUrlAuthenticationEntryPoi
         if(request.getHeader("x-requested-with") != null) {
             response.sendError(401, authException.getMessage());
         } else {
-            super.commence(request, response, authException);
+            super.commence(request, response, authException); 
         }
     }
 }
