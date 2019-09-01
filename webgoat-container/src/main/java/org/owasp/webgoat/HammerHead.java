@@ -61,4 +61,7 @@ public class HammerHead {
     public ModelAndView attack1(Authentication authentication, HttpServletRequest request, HttpServletResponse response) {
         return new ModelAndView("redirect:" + "start.mvc" + course.getFirstLesson().getLink());
     }
+    public ModelAndView attack2(Authentication authentication, HttpServletRequest request, HttpServletResponse response) {
+        return new ModelAndView("redirect:" + "start.mvc" + course.getFirstLesson().getLink());
+    }
 }
